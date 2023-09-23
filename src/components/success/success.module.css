@@ -1,0 +1,38 @@
+.success_container {
+    background-color: aliceblue;
+    margin: 50px 460px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 40px 40px;
+    height: 400px;
+    
+}
+
+.title {
+    font-size: 40px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+.success_button {
+    margin-top: 1em;
+    width: 320px;    
+    height: 45px;
+    border-radius: 8px;
+    background-color: tomato;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.success_button:hover {
+    background-color: rgb(252, 142, 123);
+}
