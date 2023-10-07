@@ -1,43 +1,13 @@
-import { useState } from "react";
+
 import image from "./illustration-sign-up-desktop.svg"
 import styles from "./SignUp.module.css"
-import validator from "validator";
 
 
 
 
-function SignUp() {
-    const [validEmail, setValidEmail] = useState(true);
-    const [email, setEmail] = useState('');
-    
 
-    const getEmail = (event) => {
-
-        setEmail(event.target.value);
-
-        const isValid = validator.isEmail(event.target.value);
-        setValidEmail(isValid);
-    }
-
-    const submitEmail = (event) => {
-        event.preventDefault();
-        console.log(email);
-
-        const listEmail = []
-
-        const isValid = validator.isEmail(email)
-        console.log(isValid)
-        if (isValid) {
-            setValidEmail(true)
-            listEmail.push(email);
-        } else {
-            setValidEmail(false)
-        }
-
-        
-        console.log(listEmail);
-    }
-
+function SignUp({getEmail, submitEmail, validEmail, email}) {
+   
      
    
     
