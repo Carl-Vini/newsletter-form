@@ -4,7 +4,7 @@
     border-radius: 30px;
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
     padding: 40px 40px;
     height: 400px;
@@ -35,4 +35,22 @@
 
 .success_button:hover {
     background-color: rgb(252, 142, 123);
+}
+
+@media (max-width: 500px) {
+    .success_container {
+        margin: 0;
+        padding: 20px;
+        height: 100%;
+        border-radius: 0;
+        align-items: start;
+    }
+
+    .icon {
+        margin-top: 7em;
+    }
+
+    .success_button {
+        margin-top: 9em;
+    }
 }

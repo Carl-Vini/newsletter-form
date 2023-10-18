@@ -14,6 +14,10 @@ function SignUp({getEmail, submitEmail, validEmail, email}) {
 
     return (
         <div className={styles.container}>
+            
+                <img src={image} alt="imagem do banner "  className={styles.image}/>
+            
+            
             <div className={styles.form_container}>
                 <h1 className={styles.title}>Stay Updated !</h1>
                 <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -46,9 +50,7 @@ function SignUp({getEmail, submitEmail, validEmail, email}) {
                         </form>
                     }
                 </div>
-            </div>
-            <img src={image} alt="" width={300} />
-                    
+            </div>         
         </div>
     )
 }
